@@ -1,0 +1,86 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/strict"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "arrowFunctions": true
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "react",
+    "react-hooks"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".d.ts", ".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx"]
+      },
+      "typescript": {}
+    }
+  },
+  "rules": {
+    // Existing rules
+    "comma-dangle": "off",
+    "function-paren-newline": "off",
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
+    "no-inner-declarations": "off",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "no-use-before-define":"off",
+    "@typescript-eslint/no-use-before-define":[
+      "error"
+    ],
+    "react/jsx-filename-extension":[
+      "warn",
+      {
+        "extensions":[
+          ".tsx"
+        ]
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+    "import/extensions": "off",
+    "no-shadow":"off",
+    "@typescript-eslint/no-shadow":[
+      "error"
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "max-len": "off",
+    "react-hooks/rules-of-hooks":"error",
+    "react-hooks/exhaustive-deps":"warn",
+    "import/prefer-default-export":"off",
+    "import/no-internal-modules": "off",
+    "array-callback-return": "off",
+    "react/prop-types": "off",
+    "consistent-return": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "types": ["react"],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "outDir": "tmp/ts-projects",
+    "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "target": "esnext"
+  }
+}
